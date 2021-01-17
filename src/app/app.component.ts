@@ -29,4 +29,6 @@ export class AppComponent {
     if(this.values.length > 36)
     this.values = '';
   }
+
+  enter = '';
 }
