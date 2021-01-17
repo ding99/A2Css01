@@ -15,4 +15,9 @@ export class AppComponent {
     new Site(5,'Yahoo')
   ];
   mySite = this.sites[1];
+
+  clickMessage = '';
+  onClickMe(){
+    this.clickMessage = 'Clicked';
+  }
 }
