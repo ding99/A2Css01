@@ -23,7 +23,7 @@ export class AppComponent {
     else this.clickMessage = '';
   }
 
-  values ='';
+  values = '';
   onKey(value: string){
     this.values += value + ' | ';
     if(this.values.length > 36)
@@ -31,4 +31,5 @@ export class AppComponent {
   }
 
   enter = '';
+  blur = '';
 }
