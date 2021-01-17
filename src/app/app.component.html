@@ -6,5 +6,24 @@
     {{site.id}} - {{ site.name }}
   </li>
 </ul>
+<p *ngIf="sites.length > 3">So many webpages you like!</p>
+
+<button (click)="onClickMe()">Click Me!</button>
+{{clickMessage}}
+<br><br>
+
+<p>on key event</p>
+<input #box (keyup) = "onKey(box.value)">
+<p>{{values}}</p>
+<br>
+
+<p>keyup event</p>
+<input #box1 (keyup.enter) = "enter=box1.value">
+<p>{{enter}}</p>
+<br>
+
+<p>keyup and blur events</p>
+<input #box2 (keyup.enter) = "blur=box2.value" (blur) = "blur=box2.value">
+<p>{{blur}}</p>
 
 <sub-page>Loading sub-page...</sub-page>
