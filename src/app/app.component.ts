@@ -22,4 +22,11 @@ export class AppComponent {
       this.clickMessage = 'Clicked';
     else this.clickMessage = '';
   }
+
+  values ='';
+  onKey(value: string){
+    this.values += value + ' | ';
+    if(this.values.length > 36)
+    this.values = '';
+  }
 }
