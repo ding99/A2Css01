@@ -1,4 +1,10 @@
 <h2>Title : {{title}}</h2>
-<h3>Site : {{site}}</h3>
+<h3>Site : {{mySite}}</h3>
+<p>Sites list:</p>
+<ul>
+  <li *ngFor="let site of sites" >
+    {{ site }}
+  </li>
+</ul>
 
 <sub-page>Loading sub-page...</sub-page>

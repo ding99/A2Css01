@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'A2Css01';
-  site = 'ZiDong KongZhi';
+  sites = ['Google','Facebook','Twitter'];
+  mySite = this.sites[1];
 }
