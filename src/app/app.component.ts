@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Site } from './site';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'A2Css01';
-  sites = ['Google','Facebook','Twitter'];
+  sites = [
+    new Site(1,'Google'),
+    new Site(2,'Facebook'),
+    new Site(3,'Twitter'),
+    new Site(5,'Yahoo')
+  ];
   mySite = this.sites[1];
 }
