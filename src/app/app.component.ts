@@ -15,4 +15,21 @@ export class AppComponent {
     new Site(5,'Yahoo')
   ];
   mySite = this.sites[1];
+
+  clickMessage = '';
+  onClickMe(){
+    if(this.clickMessage.length < 1)
+      this.clickMessage = 'Clicked';
+    else this.clickMessage = '';
+  }
+
+  values = '';
+  onKey(value: string){
+    this.values += value + ' | ';
+    if(this.values.length > 36)
+    this.values = '';
+  }
+
+  enter = '';
+  blur = '';
 }
