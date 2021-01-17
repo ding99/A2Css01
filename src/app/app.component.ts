@@ -18,6 +18,8 @@ export class AppComponent {
 
   clickMessage = '';
   onClickMe(){
-    this.clickMessage = 'Clicked';
+    if(this.clickMessage.length < 1)
+      this.clickMessage = 'Clicked';
+    else this.clickMessage = '';
   }
 }
